@@ -63,7 +63,7 @@ model = DQN("MlpPolicy",
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
 TIMESTEPS = 10000
 for i in range (1,31):
-    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="MLPzz")
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="MLP")
     model.save(f"{models_dir}/{TIMESTEPS*i}")
 
 env.close()
