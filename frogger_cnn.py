@@ -62,7 +62,7 @@ model = DQN("CnnPolicy",
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
 TIMESTEPS = 10000
 for i in range (1,31):
-    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="CNNzz") #Pode mudar o nome do log também
+    model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="CNN") #Pode mudar o nome do log também
     model.save(f"{models_dir}/{TIMESTEPS*i}")
 
 env.close()
