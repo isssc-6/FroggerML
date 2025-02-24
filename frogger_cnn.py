@@ -60,8 +60,8 @@ model = DQN("CnnPolicy",
 
 #Treinamento do modelo, vai salvar uma um modelo a cada 10k timesteps
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
-TIMESTEPS = 10000
-for i in range (1,31):
+TIMESTEPS = 50000
+for i in range (1,11):
     model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="CNN") #Pode mudar o nome do log também
     model.save(f"{models_dir}/{TIMESTEPS*i}")
 
