@@ -58,7 +58,7 @@ model = DQN("CnnPolicy",
              learning_starts=20000,
              buffer_size=TAM_BUFFER)
 
-#Treinamento do modelo, vai salvar uma um modelo a cada 10k timesteps
+#Treinamento do modelo, vai salvar uma um modelo a cada 50K timesteps
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
 TIMESTEPS = 50000
 for i in range (1,11):
