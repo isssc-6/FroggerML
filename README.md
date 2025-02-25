@@ -2,7 +2,7 @@
 Dois modelos de machine learning, um CNN, o outro MLP, ambos para testar o desempenho no jogo Frogger de Atari
 
 # Nome dos integrantes:
-Alexander Nunes Souza
+Alexander Nunes Souza \n
 Isaac Levi Lira de Oliveira
 Laila Maria Alves Santos
 Matheus Vinicius Ramos Guimaraes
