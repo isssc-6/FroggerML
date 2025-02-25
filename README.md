@@ -1,6 +1,14 @@
 # FroggerML
 Dois modelos de machine learning, um CNN, o outro MLP, ambos para testar o desempenho no jogo Frogger de Atari
 
+# Nome dos integrantes:
+Alexander Nunes Souza
+Isaac Levi Lira de Oliveira
+Laila Maria Alves Santos
+Matheus Vinicius Ramos Guimaraes
+Pericles Maikon de Jesus Costa
+
+# Informações Úteis
 Para executar são necessários !pip install tensorflow "stable-baselines3[extra]" gymnasium[atari] ale-py tensorboard torch ----------------------------
 Para usar GPU é necessário  !pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 (versão compatível com sua GPU) ----------------------------
 
