@@ -6,7 +6,7 @@ import torch
 from stable_baselines3.common.env_util import make_atari_env
 from stable_baselines3.common.vec_env import VecFrameStack
 
-#Diretório para os modelos salvos(mude para salvar outro modelo e não sobrescrever o antigo)
+#Diretório para os modelos salvos (mude se quiser salvar outro modelo e não sobrescrever o antigo)
 models_dir = "models/CNN"
 logdir = "logs"
 
