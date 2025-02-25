@@ -5,7 +5,6 @@ import os
 from stable_baselines3 import DQN
 from stable_baselines3.common.env_util import make_atari_env
 from stable_baselines3.common.vec_env import VecFrameStack
-from stable_baselines3.common.evaluation import evaluate_policy
 
 #Diretório para os modelos salvos, mude o nome se não quiser sobrescrever o modelo
 models_dir = "models/MLP"
