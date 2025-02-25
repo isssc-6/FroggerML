@@ -11,7 +11,7 @@ gym.register_envs(ale_py)
 env = make_atari_env('ALE/Frogger-v5', n_envs=1, seed=0)
 env = VecFrameStack(env, n_stack=4) #Adiciona noção de tempo
 
-#Carregue o qualquer modelo treinado na pasta models, escolha a versão
+#Carregue o modelo treinado(CNN ou MLP) na pasta models, escolha a versão
 models_dir = "models/CNN1m"
 model_path = f"{models_dir}/1700000.zip"
 model = DQN.load(model_path, env = env)
