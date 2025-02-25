@@ -17,7 +17,7 @@ if not os.path.exists(models_dir):
 if not os.path.exists(logdir):
     os.makedirs(logdir)
 
-#Se puder vai usar a gpu
+#Se puder vai usar a GPU
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 #Wrapper de punição positiva
@@ -62,7 +62,7 @@ model = DQN("MlpPolicy",
 #Treinamento do modelo, vai salvar uma um modelo a cada 50K timesteps
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
 TIMESTEPS = 50000
-for i in range (1,11):
+for i in range (1,21):
     model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="MLP")
     model.save(f"{models_dir}/{TIMESTEPS*i}")
 
