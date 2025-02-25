@@ -3,7 +3,6 @@ import ale_py
 import os
 from stable_baselines3 import DQN
 import torch
-from stable_baselines3.common.evaluation import evaluate_policy
 from stable_baselines3.common.env_util import make_atari_env
 from stable_baselines3.common.vec_env import VecFrameStack
 
@@ -61,7 +60,7 @@ model = DQN("CnnPolicy",
 #Treinamento do modelo, vai salvar uma um modelo a cada 50K timesteps
 #Visualize o desempenho com o tensorboard: python -m tensorboard.main --logdir=logs
 TIMESTEPS = 50000
-for i in range (1,11):
+for i in range (1,21):
     model.learn(total_timesteps=TIMESTEPS, reset_num_timesteps=False, tb_log_name="CNN") #Pode mudar o nome do log também
     model.save(f"{models_dir}/{TIMESTEPS*i}")
 
